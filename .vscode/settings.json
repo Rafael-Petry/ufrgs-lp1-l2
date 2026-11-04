@@ -1,0 +1,12 @@
+{
+    "[ocaml]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true,
+        "editor.defaultFormatter": "ocamllabs.ocaml-platform",
+        "editor.formatOnSave": true
+    },
+    "ocaml.sandbox": {
+        "kind": "custom",
+        "template": "~/.local/bin/opam exec -- $prog $args"
+    }
+}

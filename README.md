@@ -4,8 +4,9 @@ Implementação do interpretador da linguagem L2 com construções imperativas p
 
 ## Estrutura
 
+- **analisadorLexico.ml:** Módulo que implementa o analisador léxico do interpretador.
+- **analisadorSintatico.ml:** Módulo que implementa o analisador sintático do interpretador.
 - **aferidorTipos.ml:** Módulo que implementa o type infer do interpretador.
-- **analisadorSintatico.ml:** Módulo que implementa o parser do interpretador.
 - **avaliador.ml:** Módulo que implementa o evaluate big step do interpretador.
 - **interpretador.ml:** É o "main" do interpretador, que chama os módulos em sequência para interpretar a linguagem L2.
 

@@ -1,6 +1,6 @@
 # ufrgs-lp1-l2
 
-Implementação do interpretador da linguagem L2 com construções imperativas para o trabalho final da disciplina de LP1 da UFRGS, conforme o arquivo _especificacao.pdf_.
+Implementação do interpretador da linguagem L2 com construções imperativas para o trabalho final da disciplina de LP1 da UFRGS, conforme o arquivo [especificacao.pdf](https://github.com/Rafael-Petry/ufrgs-lp1-l2/blob/main/especificacao.pdf).
 
 ## Estrutura
 

@@ -6,7 +6,7 @@
         "editor.formatOnSave": true
     },
     "ocaml.sandbox": {
-        "kind": "custom",
-        "template": "~/.local/bin/opam exec -- $prog $args"
+        "kind": "opam",
+        "switch": "default"
     }
 }

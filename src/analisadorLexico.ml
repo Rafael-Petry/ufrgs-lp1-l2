@@ -7,8 +7,8 @@ Descrição: Módulo que implementa o analisador léxico do interpretador da lin
 
 (*
 Produz os tokens a partir do código da linguagem L2.
-@param string: Código da linguagem L2 a ser executado.
-@return string[]: Sequência de tokens da linguagem L2.
+@param string codigo: Código da linguagem L2 a ser executado.
+@return string array: Sequência de tokens da linguagem L2.
 *)
-let executar codigo =
-    print_endline ("Analisador léxico executado com " ^ codigo);
+let executar (_codigo : string) : string array =
+    [|"40"; "+"; "2"|]

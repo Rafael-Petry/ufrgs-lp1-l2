@@ -1,10 +1,10 @@
-type tipo =
+type tp =
     | TInt
     | TBool
     | TUnit
-    | TRef of tipo
+    | TRef of tp
  
-type operacaoBinaria = 
+type bop = 
     | Or
     | And
     | Eq
@@ -20,8 +20,8 @@ type ast =
     | Id of string
     | Bool of bool
     | Not of ast 
-    | Binop of operacaoBinaria * ast * ast
-    | Let of string * tipo * ast * ast 
+    | Binop of bop * ast * ast
+    | Let of string * tp * ast * ast 
     | If of ast * ast * ast
     (* construçoes imperativas *)
     | Unit

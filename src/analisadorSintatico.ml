@@ -7,8 +7,8 @@ Descrição: Módulo que implementa o analisador sintático do interpretador da 
 
 (*
 Produz a AST a partir dos tokens da linguagem L2.
-@param string[]: Sequência de tokens da linguagem L2 a ser executada.
-@return ast: Árvore de sintaxe abstrata gerada pelo analisador sintático.
+@param string array tokens: Sequência de tokens da linguagem L2 a ser executada.
+@return Ast.ast: Árvore de sintaxe abstrata gerada pelo analisador sintático.
 *)
-let executar tokens =
-    print_endline ("Analisador sintático executado com " ^ tokens);
+let executar (_tokens : string array) : Ast.ast =
+    Ast.Binop(Ast.Sum, Ast.Num 40, Ast.Num 2)

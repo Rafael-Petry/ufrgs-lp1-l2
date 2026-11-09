@@ -4,11 +4,12 @@ Implementação do interpretador da linguagem L2 com construções imperativas p
 
 ## Estrutura
 
+- **main.ml:** Programa "main" que executa o interpretador com uma entrada de programa padrão.
+- **interpretador.ml:** Implementa o interpretador da linguagem L2, que chama todos módulos para executar o programa de entrada.
 - **analisadorLexico.ml:** Módulo que implementa o analisador léxico do interpretador.
 - **analisadorSintatico.ml:** Módulo que implementa o analisador sintático do interpretador.
 - **aferidorTipos.ml:** Módulo que implementa o type infer do interpretador.
 - **avaliador.ml:** Módulo que implementa o evaluate big step do interpretador.
-- **interpretador.ml:** É o "main" do interpretador, que chama os módulos em sequência para interpretar a linguagem L2.
 
 ## Como Executar
 
@@ -16,11 +17,12 @@ Implementação do interpretador da linguagem L2 com construções imperativas p
 
 2. Instale as ferramentas no switch do opam
     - **Dune** é usado na compilação, servindo como um sistema de build (resolve dependências de arquivos).
+    - **Alcotest** é um framework para testes unitários.
     - **OCaml-LSP-Server** é um LSP para habilitar sugestões de autocomplete e diagnósticos de erro no editor.
-    - **OCamlFormat** é um formatador para padronizar estilização de código.
+    - **OCamlFormat** é um formatador para padronizar estilização de programa.
 
 ```
-opam install dune ocaml-lsp-server ocamlformat
+opam install dune alcotest ocaml-lsp-server ocamlformat
 ```
 
 3. Compile o projeto:
@@ -32,7 +34,19 @@ dune build
 4. Execute o programa:
 
 ```
-dune exec src/interpretador.exe
+dune exec src/main.exe
+```
+
+5. Execute os testes unitários:
+
+```
+dune test
+```
+
+Para visualizar o relatório do Alcotest diretamente:
+
+```
+dune exec src/tests/test_interpretador.exe
 ```
 
 ## Recomendações

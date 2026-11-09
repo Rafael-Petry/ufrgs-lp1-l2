@@ -1,7 +1,7 @@
 (*
 ---------------------------
 Arquivo: main.ml
-Descrição: Implementa o interpretador da linguagem L2, que chama todos módulos para executar o programa.
+Descrição: Executa o programa de teste padrão do interpretador.
 ---------------------------
 *)
 

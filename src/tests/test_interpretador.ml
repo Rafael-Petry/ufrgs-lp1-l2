@@ -10,8 +10,12 @@ Testa a execução do interpretador da linguagem L2 para o programa de entrada.
 @return unit: Não há retorno.
 *)
 let interpreta_arquivo () =
-    let programa = In_channel.with_open_bin 
-        "src/tests/data/1.txt"
+    let caminho =
+        if Sys.file_exists "data/1.txt" then "data/1.txt"
+        else "src/tests/data/1.txt"
+    in
+    let programa = In_channel.with_open_bin
+        caminho
         In_channel.input_all in
 
     let resultado = Interpretador.executar(programa) in

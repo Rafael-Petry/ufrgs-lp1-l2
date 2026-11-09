@@ -1,11 +1,18 @@
 (*
-Executa o programa de teste padrão do interpretador.
-@params codigo: Código da linguagem L2 a ser executado.
-@return valor: Valor obtido pelo avaliador.
+---------------------------
+Arquivo: interpretador.ml
+Descrição: Implementa o interpretador da linguagem L2, que chama todos módulos para executar o programa de entrada.
+---------------------------
 *)
-let executar (codigo : string) : string =
-    (* 1 - Executa o analisador léxico para obter os tokens a partir do código de entrada *)
-    let tokens : string array = AnalisadorLexico.executar codigo in
+
+(*
+Executa o interpretador da linguagem L2 para o programa de entrada.
+@param string programa: Programa da linguagem L2 a ser executado.
+@return string: Tipo e valor obtido pelo avaliador.
+*)
+let executar (programa : string) : string =
+    (* 1 - Executa o analisador léxico para obter os tokens a partir do programa de entrada *)
+    let tokens : string array = AnalisadorLexico.executar programa in
 
     (* 2 - Executa o analisador sintático para obter a AST a partir dos tokens *)
     let ast : Ast.ast = AnalisadorSintatico.executar tokens in

@@ -1,0 +1,4 @@
+(test
+ (name test_interpretador)
+ (libraries l2 alcotest)
+ (deps data/1.txt))

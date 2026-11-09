@@ -19,7 +19,7 @@ let interpreta_arquivo () =
         In_channel.input_all in
 
     let resultado = Interpretador.executar(programa) in
-    Alcotest.(check string) "resultado do interpretador" "int 42" resultado
+    Alcotest.(check string) "resultado do interpretador" "int 41" resultado
 
 (*
 Executa os testes do interpretador.

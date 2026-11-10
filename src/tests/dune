@@ -1,5 +1,6 @@
 (test
  (name test_interpretador)
+ (deps (source_tree data))
  (libraries l2 alcotest))
 
 (test

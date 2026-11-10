@@ -8,7 +8,7 @@ Implementação do interpretador da linguagem L2 com construções imperativas p
 - **interpretador.ml:** Implementa o interpretador da linguagem L2, que chama todos módulos para executar o programa de entrada.
 - **analisadorLexico.ml:** Módulo que implementa o analisador léxico do interpretador.
 - **analisadorSintatico.ml:** Módulo que implementa o analisador sintático do interpretador.
-- **aferidorTipos.ml:** Módulo que implementa o type infer do interpretador.
+- **verificadorTipos.ml:** Módulo que implementa o type infer do interpretador.
 - **avaliador.ml:** Módulo que implementa o evaluate big step do interpretador.
 
 ## Como Executar
@@ -46,7 +46,7 @@ dune test
 Para visualizar o relatório do Alcotest diretamente:
 
 ```
-dune exec src/tests/test_interpretador.exe
+dune exec src/tests/<nome_arquivo_teste>.exe
 ```
 
 ## Recomendações

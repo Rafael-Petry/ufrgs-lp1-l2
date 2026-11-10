@@ -1,6 +1,6 @@
 (*
 ---------------------------
-Arquivo: aferidorTipos.ml
+Arquivo: verificadorTipos.ml
 Descrição: Módulo que implementa o type infer do interpretador da linguagem L2.
 ---------------------------
 *)

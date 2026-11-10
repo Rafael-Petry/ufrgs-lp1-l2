@@ -1,7 +1,12 @@
 (library
  (name l2)
  (wrapped false)
- (modules ast analisadorLexico analisadorSintatico aferidorTipos avaliador
+ (modules
+  ast
+  analisadorLexico
+  analisadorSintatico
+  verificadorTipos
+  avaliador
   interpretador))
 
 (executable

@@ -1,4 +1,19 @@
 (test
  (name test_interpretador)
- (libraries l2 alcotest)
- (deps data/1.txt))
+ (libraries l2 alcotest))
+
+(test
+ (name test_verificadorTipos)
+ (libraries l2 alcotest))
+
+(test
+ (name test_analisadorLexico)
+ (libraries l2 alcotest))
+
+(test
+ (name test_analisadorSintatico)
+ (libraries l2 alcotest))
+
+(test
+ (name test_avaliador)
+ (libraries l2 alcotest))

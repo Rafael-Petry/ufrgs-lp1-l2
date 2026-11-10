@@ -17,10 +17,10 @@ let executar (programa : string) : string =
     (* 2 - Executa o analisador sintático para obter a AST a partir dos tokens *)
     let ast : Ast.ast = AnalisadorSintatico.executar tokens in
 
-    (* 3 - Executa o aferidor de tipos para obter o tipo da AST *)
-    let tipo : Ast.tp = AferidorTipos.executar ast in
+    (* 3 - Executa o verificador de tipos para obter o tipo da AST *)
+    let tipo : Ast.tp = VerificadorTipos.executar ast in
 
     (* 4 - Executa o avaliador para obter o valor da AST *)
     let valor : Ast.ast = Avaliador.executar ast in
 
-    AferidorTipos.tipo_to_string tipo ^ " " ^ Avaliador.valor_to_string valor
+    VerificadorTipos.tipo_to_string tipo ^ " " ^ Avaliador.valor_to_string valor

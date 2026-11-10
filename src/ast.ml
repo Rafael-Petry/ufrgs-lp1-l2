@@ -1,3 +1,10 @@
+(*
+---------------------------
+Arquivo: ast.ml
+Descrição: Arquivo disponibilizado no Moodle que define os datatypes básicos da linguagem L2.
+---------------------------
+*)
+
 type tp =
     | TInt
     | TBool

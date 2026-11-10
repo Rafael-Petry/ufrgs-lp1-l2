@@ -11,7 +11,7 @@ Implementação do interpretador da linguagem L2 com construções imperativas p
 - **verificadorTipos.ml:** Módulo que implementa o type infer do interpretador.
 - **avaliador.ml:** Módulo que implementa o evaluate big step do interpretador.
 
-## Como Executar
+## Como Rodar
 
 1. Instale o [OCaml](https://ocaml.org/)
 
@@ -37,16 +37,10 @@ dune build
 dune exec src/main.exe
 ```
 
-5. Execute os testes unitários:
+5. Execute os testes unitários (se não retornar nada é porque passou em tudo):
 
 ```
 dune test
-```
-
-Para visualizar o relatório do Alcotest diretamente:
-
-```
-dune exec src/tests/<nome_arquivo_teste>.exe
 ```
 
 ## Recomendações
